@@ -1,16 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Img from "../assets/Loginpic.png";
-import SignUpContent from "../SignUpContent";
-import SignUpInput from "../SignUpSidebar";
+import SignInContent from "../components/SignInContent";
+import SignInSidebar from "../components/SignInSidebar";
 
 const SignUp: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        {/* <img src={Img}></img> */}
-        <SignUpInput />
-        <SignUpContent />
+        <SignInSidebar />
+        <SignInContent />
       </Wrapper>
     </Container>
   );
@@ -26,10 +24,6 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  // background-image: url(${Img});
-  // background-position: left;
-  // background-size: object;
-  // background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   display: flex;

@@ -4,7 +4,7 @@ type InputProps = {
   Type: any;
 };
 
-const SignUpInput = (props: InputProps) => {
+const SigninInput = (props: InputProps) => {
   return (
     <Container>
       <StyledInput type={props.Type} required autoComplete="off" />
@@ -36,4 +36,4 @@ const Container = styled.div`
   align-item: center;
 `;
 
-export default SignUpInput;
+export default SigninInput;

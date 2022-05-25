@@ -1,21 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "./assets/Logoalta.png";
-import SignUpInput from "./SignUpInput";
+import SigninInput from "./SigninInput";
 
-const SignUpSidebar: React.FC = () => {
+const RsPassSidebar: React.FC = () => {
   return (
     <Container>
       <LogoWrapper>
         <img src={Logo} alt={"Logo"} />
       </LogoWrapper>
       <Form>
-        <h3>Tên Đăng Nhập *</h3>
-        <SignUpInput Type="text" />
-        <h3>Mật Khẩu *</h3>
-        <SignUpInput Type="password" />
-        <a href=" ">Quên mật khẩu ?</a>
-        <button>Đăng Nhập</button>
+        <h2>Đặt lại mật khẩu</h2>
+        <h3>Vui lòng nhập email để đặt lại mật khẩu của bạn *</h3>
+        <SigninInput Type="email" />
+        <ButtonWrapper>
+          <Link to={"/"}>
+            <button className="Cancel_btn">Hủy</button>
+          </Link>
+          <Link to={"/resetpass-2"}>
+            <button className="Continue_btn">Tiếp tục</button>
+          </Link>
+        </ButtonWrapper>
       </Form>
     </Container>
   );
@@ -53,33 +59,38 @@ const Form = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 100px;
+  align-items: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: #282739;
+  }
+
   h3 {
     color: black;
     margin-top: 10px;
-  }
-
-  a {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #e73f3f;
+    font-sized: 18px;
+    line-height: 27px;
   }
+`;
+
+const ButtonWrapper = styled.div`
+  display: inline;
 
   button {
     width: 162px;
     height: 40px;
-    background-color: #ff9138;
+    border: none;
     box-shadow: 0px 0px 6px #e7e9f2;
     border-radius: 8px;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: white;
-    border: none;
-    margin-top: 20px;
-    margin-left: 130px;
+    margin-top: 30px;
+    margin-left: 20px;
     cursor: pointer;
     transition: all 0.2 ease-in;
 
@@ -87,6 +98,18 @@ const Form = styled.form`
       transform: translateY(-3px);
     }
   }
+
+  .Cancel_btn {
+    color: #ff9138;
+    border: 1px solid #ff9138;
+    filter: drop-shadow(0px 0px 6px #e7e9f2);
+  }
+
+  .Continue_btn {
+    background-color: #ff9138;
+    box-shadow: 0px 0px 6px #e7e9f2;
+    color: white;
+  }
 `;
 
-export default SignUpSidebar;
+export default RsPassSidebar;

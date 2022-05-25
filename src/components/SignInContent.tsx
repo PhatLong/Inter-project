@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Img from "./assets/Loginpic.png";
 
-const SignUpContent: React.FC = () => {
+const SignInContent: React.FC = () => {
   return (
     <Container>
       <img src={Img} alt={"background_img"} />
@@ -48,4 +48,4 @@ const Container = styled.div`
   }
 `;
 
-export default SignUpContent;
+export default SignInContent;
