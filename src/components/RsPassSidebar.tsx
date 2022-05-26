@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Logo from "./assets/Logoalta.png";
+import Logo from "../assets/Logoalta.png";
 import SigninInput from "./SigninInput";
 
 const RsPassSidebar: React.FC = () => {

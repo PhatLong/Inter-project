@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Img from "./assets/Loginpic.png";
+import Img from "../assets/Loginpic.png";
 
 const SignInContent: React.FC = () => {
   return (

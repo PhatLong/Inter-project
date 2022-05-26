@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "./assets/Logoalta.png";
+import Logo from "../assets/Logoalta.png";
 import SigninInput from "./SigninInput";
 import { Link } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const SignInSidebar: React.FC = () => {
         <Link to={"/resetpass"}>
           <a href=" ">Quên mật khẩu ?</a>
         </Link>
-        <Link to={"/"}>
+        <Link to={"/profile"}>
           <button>Đăng Nhập</button>
         </Link>
       </Form>

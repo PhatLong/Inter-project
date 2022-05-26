@@ -2,12 +2,19 @@ import React from "react";
 import styled from "styled-components";
 type InputProps = {
   Type: any;
+  Placeholer?: string;
 };
 
 const SigninInput = (props: InputProps) => {
+  const { Placeholer = "" } = props;
   return (
     <Container>
-      <StyledInput type={props.Type} required autoComplete="off" />
+      <StyledInput
+        placeholder={Placeholer}
+        type={props.Type}
+        required
+        autoComplete="off"
+      />
     </Container>
   );
 };

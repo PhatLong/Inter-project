@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Img from "./assets/RsPasspic.png";
+import Img from "../assets/RsPasspic.png";
 
 const RsPassContent: React.FC = () => {
   return (

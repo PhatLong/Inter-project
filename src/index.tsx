@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import ResetPass from "./pages/ResetPass";
 import ResetPass2 from "./pages/ResetPass2";
+import Device from "./pages/Device";
+import Profile from "./pages/Profile";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,7 +17,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        {/* <Route path="/Infor" element={<Infor />} /> */}
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/device" element={<Device />} />
         <Route path="/resetpass" element={<ResetPass />} />
         <Route path="/resetpass-2" element={<ResetPass2 />} />
       </Routes>
