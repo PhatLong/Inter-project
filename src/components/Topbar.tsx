@@ -1,20 +1,29 @@
 import React from "react";
 import { BsBellFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Avatar from "../assets/avatar.png";
 
-const Topbar = () => {
+type TopbarProps = {
+  Title?: string;
+  CurrentTitle: string;
+};
+
+const Topbar = (props: TopbarProps) => {
   return (
     <div>
       <Nav>
         <Navleft>
-          <h3>Thông tin cá nhân</h3>
+          <h3>{props.CurrentTitle}</h3>
+          <h3 className="Title">{props.Title}</h3>
         </Navleft>
         <Navright>
           <button>
             <BsBellFill className="bell_icon" />
           </button>
-          <img src={Avatar} alt="" />
+          <Link to="/profile" className="profile_pic">
+            <img src={Avatar} alt="" />
+          </Link>
           <h3>
             Xin chào
             <br /> <h2>Lê Quỳnh Ái Vân</h2>
@@ -27,7 +36,7 @@ const Topbar = () => {
 
 const Nav = styled.nav`
   position: absolute;
-  background-color: #f7f7f7;
+  background-color: transparent;
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -45,6 +54,11 @@ const Navleft = styled.div`
   display: flex;
   aligin-items: center;
   padding: 1rem;
+
+  .Title {
+    color: #7e7d88;
+    margin-left: 8px;
+  }
 `;
 
 const Navright = styled.div`
@@ -88,6 +102,10 @@ const Navright = styled.div`
     font-size: 16px;
     line-height: 24px;
     color: #535261;
+  }
+
+  .profile_pic {
+    cursor: pointer;
   }
 `;
 

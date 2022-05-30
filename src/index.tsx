@@ -8,6 +8,7 @@ import ResetPass from "./pages/ResetPass";
 import ResetPass2 from "./pages/ResetPass2";
 import Device from "./pages/Device";
 import Profile from "./pages/Profile";
+import Dashbroad from "./pages/Dashbroad";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -17,10 +18,11 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/device" element={<Device />} />
         <Route path="/resetpass" element={<ResetPass />} />
         <Route path="/resetpass-2" element={<ResetPass2 />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/dashbroad" element={<Dashbroad />} />
+        <Route path="/device" element={<Device />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

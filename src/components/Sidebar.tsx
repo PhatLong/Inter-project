@@ -15,7 +15,7 @@ import Logo from "../assets/Logoalta.png";
 const Sidebar = () => {
   const menuItem = [
     {
-      path: "/",
+      path: "/dashbroad",
       name: "Dashbroad",
       icon: <BsColumnsGap />,
     },
@@ -57,8 +57,8 @@ const Sidebar = () => {
             key={index}
             className="link"
             // style={({ isActive }) => ({
-            //   color: isActive ? "orange" : "white",
-            //   background: isActive ? "white" : "#7E7D88",
+            //   background: isActive ? "orange" : "white",
+            //   color: isActive ? "white" : "#7E7D88",
             // })}
           >
             <div className="icon">{item.icon}</div>

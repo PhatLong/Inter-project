@@ -6,7 +6,7 @@ import Topbar from "../components/Topbar";
 const Profile = () => {
   return (
     <div className="main-background">
-      <Topbar />
+      <Topbar CurrentTitle="Thông tin cá nhân" />
       <Sidebar />
       <PersonInfor />
     </div>
