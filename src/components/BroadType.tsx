@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  BsArrowDown,
   BsArrowUp,
   BsBookmarkStar,
   BsCalendar,
@@ -36,9 +37,9 @@ const BroadType = () => {
           </h4>
         </div>
         <div className="broad_number">
-          <h1>4.221</h1>
+          <h1>3.721</h1>
           <div className="number_wrapper2">
-            <BsArrowUp /> 32,41%
+            <BsArrowDown /> 32,41%
           </div>
         </div>
       </div>
@@ -52,9 +53,9 @@ const BroadType = () => {
           </h4>
         </div>
         <div className="broad_number">
-          <h1>4.221</h1>
+          <h1>468</h1>
           <div className="number_wrapper1">
-            <BsArrowUp /> 32,41%
+            <BsArrowUp /> 56,41%
           </div>
         </div>
       </div>
@@ -68,15 +69,12 @@ const BroadType = () => {
           </h4>
         </div>
         <div className="broad_number">
-          <h1>4.221</h1>
+          <h1>32</h1>
           <div className="number_wrapper2">
-            <BsArrowUp /> 32,41%
+            <BsArrowUp /> 22,41%
           </div>
         </div>
       </div>
-      {/* <div className="broads">Số thứ tự đã sử dụng</div>
-      <div className="broads">Số thứ tự đang chờ</div>
-      <div className="broads">Số thứ tự đã bỏ qua</div> */}
     </div>
   );
 };

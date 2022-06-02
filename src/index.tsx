@@ -9,6 +9,8 @@ import ResetPass2 from "./pages/ResetPass2";
 import Device from "./pages/Device";
 import Profile from "./pages/Profile";
 import Dashbroad from "./pages/Dashbroad";
+import Dashbroad_weeks from "./pages/Dashbroad_weeks";
+import Dashbroad_months from "./pages/Dashbroad_months";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -22,6 +24,8 @@ root.render(
         <Route path="/resetpass-2" element={<ResetPass2 />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/dashbroad" element={<Dashbroad />} />
+        <Route path="/dashbroad-week" element={<Dashbroad_weeks />} />
+        <Route path="/dashbroad-month" element={<Dashbroad_months />} />
         <Route path="/device" element={<Device />} />
       </Routes>
     </BrowserRouter>
