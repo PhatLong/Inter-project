@@ -14,8 +14,8 @@ const Topbar = (props: TopbarProps) => {
     <div>
       <Nav>
         <Navleft>
+          <h3 className="topbar_title">{props.Title}</h3>
           <h3>{props.CurrentTitle}</h3>
-          <h3 className="Title">{props.Title}</h3>
         </Navleft>
         <Navright>
           <button>
@@ -55,9 +55,9 @@ const Navleft = styled.div`
   aligin-items: center;
   padding: 1rem;
 
-  .Title {
+  .topbar_title {
     color: #7e7d88;
-    margin-left: 8px;
+    margin-right: 8px;
   }
 `;
 
@@ -80,6 +80,7 @@ const Navright = styled.div`
   .bell_icon {
     width: 20px;
     height: 20px;
+    cursor: pointer;
   }
 
   img {

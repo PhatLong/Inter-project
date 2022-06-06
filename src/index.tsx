@@ -11,6 +11,9 @@ import Profile from "./pages/Profile";
 import Dashbroad from "./pages/Dashbroad";
 import Dashbroad_weeks from "./pages/Dashbroad_weeks";
 import Dashbroad_months from "./pages/Dashbroad_months";
+import AddDevice from "./pages/AddDevice";
+import UpdateDevice from "./pages/UpdateDevice";
+import Device_Detail from "./pages/Device_Detail";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -27,6 +30,9 @@ root.render(
         <Route path="/dashbroad-week" element={<Dashbroad_weeks />} />
         <Route path="/dashbroad-month" element={<Dashbroad_months />} />
         <Route path="/device" element={<Device />} />
+        <Route path="/add-device" element={<AddDevice />} />
+        <Route path="/update-device" element={<UpdateDevice />} />
+        <Route path="/device-detail" element={<Device_Detail />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
