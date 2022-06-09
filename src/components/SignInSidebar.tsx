@@ -18,7 +18,7 @@ const SignInSidebar: React.FC = () => {
         <Link to={"/resetpass"}>
           <a href=" ">Quên mật khẩu ?</a>
         </Link>
-        <Link to={"/profile"}>
+        <Link to={"/dashbroad"}>
           <button>Đăng Nhập</button>
         </Link>
       </Form>

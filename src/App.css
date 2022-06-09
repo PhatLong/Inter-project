@@ -648,7 +648,7 @@
   width: 300px;
   height: 44px;
   background: white;
-  padding: 10;
+  padding: 10px;
   border-radius: 8px;
 }
 
@@ -781,17 +781,146 @@ span {
 
 /* -------------ADD DEVICE-------------- */
 .add_deviceform {
-  width: 1152px;
-  height: 550px;
+  width: 1220px;
+  height: 510px;
   background: #ffffff;
   box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
   border-radius: 16px;
 }
 
-.add_deviceform h3 {
+.form-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
   color: #ff7506;
   padding: 1%;
+}
+
+.addform_container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 0 1.5rem 5px 1.5rem;
+}
+
+.addform_container label {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282739;
+}
+
+.addform_container span {
+  width: 6px;
+  height: 6px;
+  color: #ff4747;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.addform_container input {
+  width: 535px;
+  height: 44px;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  background-color: white;
+  padding: 0 1rem;
+  transition: all 0.2 ease-in;
+}
+
+.usedservice_item {
+  grid-column: 1 / 3;
+}
+
+.usedservice_item input {
+  width: 1120px;
+}
+
+.devicetype_select {
+  width: 570px;
+  height: 44px;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  background-color: white;
+  transition: all 0.2 ease-in;
+}
+
+.devicetype_placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a9a9b0;
+}
+
+.notice {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7e7d88;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.notice span {
+  width: 6px;
+  height: 6px;
+  color: #ff4747;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.addform_button {
+  display: flex;
+  width: 1220px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.addform_cancelbtn {
+  width: 147px;
+  height: 48px;
+  background: #fff2e7;
+  border: 1.5px solid #ff9138;
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff9138;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.addform_addbtn {
+  width: 147px;
+  height: 48px;
+  background: #ff9138;
+  border: none;
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.device_detailform {
+  width: 1170px;
+  height: 550px;
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+
+  /* display: grid;
+  grid-template: repeat(3, 100px) / repeat(2, 200px);
+  grid-gap: 10px;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 0 1.5rem 5px 1.5rem; */
 }
