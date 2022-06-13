@@ -63,11 +63,6 @@ const Topbar = (props: TopbarProps): JSX.Element => {
               <li>
                 <h3>Người dùng: Nguyễn Thị Thùy Dung</h3>
                 <p>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                <hr />
-              </li>
-              <li>
-                <h3>Faheem Najm</h3>
-                <p>All I do is win</p>
               </li>
             </ul>
           </button>

@@ -25,7 +25,7 @@ const Sidebar = () => {
       icon: <BsDisplay />,
     },
     {
-      path: "/",
+      path: "/service",
       name: "Dịch vụ",
       icon: <BsWhatsapp />,
     },

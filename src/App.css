@@ -656,6 +656,10 @@
   margin-left: 250px;
 }
 
+.device_search svg {
+  color: #ff7506;
+}
+
 .device_table {
   width: 1170px;
   height: 460px;
@@ -910,17 +914,158 @@ span {
   cursor: pointer;
 }
 
+/* ----------------DEVICE DETAIL PAGE------------------- */
+
 .device_detailform {
   width: 1170px;
   height: 550px;
   background: #ffffff;
   box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
   border-radius: 16px;
+}
 
-  /* display: grid;
-  grid-template: repeat(3, 100px) / repeat(2, 200px);
-  grid-gap: 10px;
+.device_detailwrapper {
+  display: grid;
+  grid-template: repeat(3, 40px) / repeat(2, 500px);
+  padding: 0 1.5rem 5px 1.5rem;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282739;
+}
+
+.device_detailwrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535261;
+}
+
+.device_detailname {
+  display: flex;
+}
+
+.device_detailname p {
+  margin-left: 50px;
+}
+
+.update_icon {
+  width: 30;
+  height: 30;
+  padding: 5px;
+  background: #ff9138;
+  color: #ffff;
+  border-radius: 5px;
+}
+
+.tag_field {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 10px 270px 10px 12px;
+  gap: 10px;
+
+  width: 1104px;
+  height: 50px;
+
+  background: #ffffff;
+
+  border: 1.5px solid #ffac6a;
+  border-radius: 8px;
+}
+
+.usedservice_tag {
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  gap: 10px;
+  background: #ffac6a;
+  box-shadow: 0px 0px 6px #e7e9f2;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.usedservice_tag svg {
+  font-size: larger;
+}
+
+/* -------------- SERVICE PAGE ----------------- */
+.calender_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.date_selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  background: #ffffff;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+}
+
+.calender_arrow {
+  color: #535261 !important;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.service_container {
+  position: absolute;
+  width: 1280px;
+  height: 630px;
+  left: 240px;
+  top: 100px;
+  /* background-color: lightgray; */
+}
+
+.add_serviceform {
+  margin-top: 10px;
+  width: 1250px;
+  height: 534px;
+  /* background: lightcyan; */
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+}
+
+.add_serviceWrapper {
+  height: 150px;
+  display: flex;
+  align-content: flex-start;
   justify-content: space-around;
-  align-content: space-around;
-  padding: 0 1.5rem 5px 1.5rem; */
+  padding: 0 1.5rem 0px 1.5rem;
+  /* background-color: lightcoral; */
+}
+
+.add_serviceWrapper input {
+  padding: 5px 10px 5px 10px;
+  gap: 10px;
+  width: 560px;
+  height: 30px;
+  background: #ffffff;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+}
+
+.left-content input {
+  margin-bottom: 10px;
+}
+
+.service_description textarea {
+  height: 100px;
+  padding: 5px 10px 5px 10px;
+  gap: 10px;
+  width: 560px;
+  background: #ffffff;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  resize: none;
 }

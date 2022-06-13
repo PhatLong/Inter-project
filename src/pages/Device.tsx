@@ -49,7 +49,7 @@ const empList = [
 
 const Device = () => {
   const [active, setActive] = useState("all");
-  // const [connect, setConnect] = useState("all");
+  const [connect, setConnect] = useState("all");
   // const [filteredData, setFilteredData] = useState(empList);
 
   const columns = [
@@ -109,8 +109,8 @@ const Device = () => {
               className="select_list"
               labelId="demo-simple-select-label"
               id="demo-simple-select"
-              value={active}
-              onChange={(e) => setActive(e.target.value)}
+              value={connect}
+              onChange={(e) => setConnect(e.target.value)}
             >
               <MenuItem value={"all"}>Tất cả</MenuItem>
               <MenuItem value={"is_connect"}>Kết nối</MenuItem>
@@ -126,6 +126,7 @@ const Device = () => {
             </InputLabel>
             <SearchBar
               value={""}
+              placeholder="Nhập từ khóa"
               // onChange={(e) => e.setActive({ value: newValue })}
               // onRequestSearch={() => doSomethingWith(this.state.value)}
             />

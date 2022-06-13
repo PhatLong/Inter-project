@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Logo from "../assets/Logoalta.png";
 import SigninInput from "./SigninInput";
 import { Link } from "react-router-dom";
+import { BsEyeSlash } from "react-icons/bs";
 
 const SignInSidebar: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const SignInSidebar: React.FC = () => {
         <SigninInput Type="text" />
         <h3>Mật Khẩu *</h3>
         <SigninInput Type="password" />
+        {/* <BsEyeSlash /> */}
         <Link to={"/resetpass"}>
           <a href=" ">Quên mật khẩu ?</a>
         </Link>

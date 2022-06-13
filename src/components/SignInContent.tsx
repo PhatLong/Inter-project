@@ -6,10 +6,12 @@ const SignInContent: React.FC = () => {
   return (
     <Container>
       <img src={Img} alt={"background_img"} />
-      <h2>
-        Hệ thống <br />
-        <h1>QUẢN LÝ XẾP HÀNG</h1>
-      </h2>
+      <Content_Wrapper>
+        <h1>
+          Hệ thống <br />
+          <h2>QUẢN LÝ XẾP HÀNG</h2>
+        </h1>
+      </Content_Wrapper>
     </Container>
   );
 };
@@ -21,30 +23,31 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  h1 {
-    top: 370px;
-    left: 1130px;
+  img {
+    height: 75%;
+    width: auto;
+  }
+`;
+
+const Content_Wrapper = styled.div`
+  position: absolute;
+  top: 350px;
+  left: 1140px;
+
+  h2 {
     font-size: 36px;
     font-weight: 900;
     color: #ff7506;
   }
 
-  h2 {
-    top: 370px;
-    left: 1130px;
+  h1 {
     font-size: 34px;
     font-weight: 400;
     color: #ff7506;
-    position: absolute;
 
     @media (max-width: 900px) {
       display: none;
     }
-  }
-
-  img {
-    height: 75%;
-    width: auto;
   }
 `;
 
