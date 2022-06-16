@@ -10,13 +10,16 @@ import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 
-const AddService = () => {
+const UpdateService = () => {
   const [isSelected, setIsSelected] = useState<string[]>([]);
-  // const [Word, setWord] = useState<string>("");
+  const [Code, setCode] = useState<string>("201");
+  const [Name, setName] = useState<string>("Khám tim mạch");
+  const [Desc, setDesc] = useState<string>("Mô tả dịch vụ");
 
-  // const onType = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   setWord(event.target.value);
-  // };
+  const onType = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setCode(event.target.value);
+    setName(event.target.value);
+  };
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const index = isSelected.indexOf(event.target.value);
@@ -32,8 +35,8 @@ const AddService = () => {
   return (
     <div className="main-background">
       <Topbar
-        Title="Dịch vụ > Danh sách dịch vụ > "
-        CurrentTitle="Thêm dịch vụ"
+        Title="Dịch vụ > Danh sách dịch vụ > Chi tiết >"
+        CurrentTitle="Cập nhật"
       />
       <Sidebar />
       <div className="service_container">
@@ -46,18 +49,29 @@ const AddService = () => {
                 <label>
                   Mã dịch vụ: <span>*</span>
                 </label>
-                <input type="String" placeholder="201" />
+                <input
+                  type="String"
+                  value={Code}
+                  onChange={(event) => setCode(event.target.value)}
+                />
               </div>
               <div>
                 <label>
                   Tên dịch vụ: <span>*</span>
                 </label>
-                <input type="String" placeholder="Khám tim mạch" />
+                <input
+                  type="String"
+                  value={Name}
+                  onChange={(event) => setName(event.target.value)}
+                />
               </div>
             </div>
             <div className="service_description">
               <label>Mô tả:</label>
-              <textarea placeholder="Mô tả dịch vụ" />
+              <textarea
+                value={Desc}
+                onChange={(event) => setDesc(event.target.value)}
+              />
             </div>
           </div>
           <h3 className="form-title">Quy tắc cấp số</h3>
@@ -139,7 +153,7 @@ const AddService = () => {
           </p>
         </div>
         <div className="addform_button">
-          <Link to="/service">
+          <Link to="/service-detail">
             <button className="addform_cancelbtn">Hủy bỏ</button>
           </Link>
           <button className="addform_addbtn" type="submit">
@@ -151,4 +165,4 @@ const AddService = () => {
   );
 };
 
-export default AddService;
+export default UpdateService;

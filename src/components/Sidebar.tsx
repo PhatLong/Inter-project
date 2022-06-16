@@ -30,7 +30,7 @@ const Sidebar = () => {
       icon: <BsWhatsapp />,
     },
     {
-      path: "/",
+      path: "/queue",
       name: "Cấp số",
       icon: <BsStack />,
     },

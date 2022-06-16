@@ -732,6 +732,22 @@ td:nth-child(8) {
   border-radius: 10px;
   margin-right: 5px;
 }
+.blue {
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  background: #5490eb;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.gray {
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  background: #6c7585;
+  border-radius: 10px;
+  margin-right: 5px;
+}
 
 .table_pages {
   display: flex;
@@ -760,7 +776,7 @@ span {
 
 .device_add {
   position: absolute;
-  left: 1200px;
+  left: 1190px;
   top: 120px;
   width: 80px;
   height: 75px;
@@ -965,7 +981,7 @@ span {
   padding: 10px 270px 10px 12px;
   gap: 10px;
 
-  width: 1104px;
+  width: 880px;
   height: 50px;
 
   background: #ffffff;
@@ -1029,7 +1045,7 @@ span {
 .add_serviceform {
   margin-top: 10px;
   width: 1250px;
-  height: 534px;
+  height: 500px;
   /* background: lightcyan; */
   background: #ffffff;
   box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
@@ -1055,6 +1071,14 @@ span {
   border-radius: 8px;
 }
 
+.add_serviceWrapper span {
+  width: 6px;
+  height: 6px;
+  color: #ff4747;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
 .left-content input {
   margin-bottom: 10px;
 }
@@ -1068,4 +1092,179 @@ span {
   border: 1.5px solid #d4d4d7;
   border-radius: 8px;
   resize: none;
+}
+
+.checkbox_group {
+  /* background-color: lightcyan; */
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282739;
+}
+
+.checkbox_group input {
+  margin-left: 82px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 20px;
+  padding: 8px 6px 8px 10px;
+  gap: 10px;
+  background: #ffffff;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.checkbox_group p {
+  margin-left: 10px;
+}
+
+.checkbox_group #item1 {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox_group #item1 input {
+  margin-left: 10px;
+}
+
+/* ----------- SERVICE DETAIL PAGE ----------- */
+.servicedetail_content {
+  width: 360px;
+  height: 570px;
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 12px;
+  padding: 1rem 0 0 1rem;
+}
+
+.servicedetail_content h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+  margin-bottom: 10px;
+}
+
+.servicedetail_content .info p {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282739;
+  margin-bottom: 10px;
+}
+
+.servicedetail_content .info span {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535261;
+}
+
+.servicedetail_content .rule div {
+  display: flex;
+  align-items: center;
+}
+
+.servicedetail_content .rule input {
+  margin-left: 65px;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 20px;
+  padding: 8px 6px 8px 10px;
+  gap: 10px;
+  background: #ffffff;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.servicedetail_content .rule p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282739;
+  margin-bottom: 10px;
+}
+
+.servicedetail_content .rule #item1 {
+  display: flex;
+  align-items: center;
+}
+
+.servicedetail_content .rule #item1 input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.servicedetail_table {
+  position: absolute;
+  left: 400px;
+  top: 40px;
+  width: 760px;
+  height: 580px;
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 12px;
+}
+
+.service_topcontent {
+  display: flex;
+  margin-bottom: 12px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.service_select {
+  width: 160px;
+  height: 44px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.service_search .ForwardRef-root-1 {
+  width: 220px;
+  height: 44px !important;
+}
+
+.service_search svg {
+  color: #ff7506;
+}
+
+.servicedetail_table .table {
+  width: 740px;
+  margin: 0 0px 0 10px;
+}
+
+.D_table_pages {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 0 480px;
+  color: #7e7d88;
+}
+
+.D_table_pages svg,
+span {
+  cursor: pointer;
+}
+
+.D_table_pages span {
+  width: 10px;
+  height: 22px;
+  margin: 0 10px 0 10px;
+}
+
+.device_add#item4 {
+  left: 1190px;
+  top: 50px;
+}
+
+.device_add#item5 {
+  left: 1190px;
+  top: 150px;
 }

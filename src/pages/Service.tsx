@@ -26,10 +26,10 @@ const Service = () => {
 
   return (
     <div className="main-background">
-      <Topbar Title="Thiết bị >" CurrentTitle="Danh sách thiết bị" />
+      <Topbar Title="Dịch vụ >" CurrentTitle="Danh sách dịch vụ" />
       <Sidebar />
       <div className="device_container">
-        <h3 className="content_title">Danh sách thiết bị</h3>
+        <h3 className="content_title">Quản lý dịch vụ</h3>
         <div className="device_topcontent">
           <div className="device_select">
             <InputLabel

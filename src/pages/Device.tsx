@@ -101,14 +101,14 @@ const Device = () => {
           <div className="device_select">
             <InputLabel
               className="InputLabel"
-              id="demo-simple-select-standard-label"
+              id="demo-simple-select-standard-label2"
             >
               Trạng thái kết nối
             </InputLabel>
             <Select
               className="select_list"
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
+              labelId="demo-simple-select-label2"
+              id="demo-simple-select2"
               value={connect}
               onChange={(e) => setConnect(e.target.value)}
             >

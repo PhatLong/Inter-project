@@ -16,6 +16,9 @@ import UpdateDevice from "./pages/UpdateDevice";
 import Device_Detail from "./pages/Device_Detail";
 import Service from "./pages/Service";
 import AddService from "./pages/AddService";
+import UpdateService from "./pages/UpdateService";
+import Service_Detail from "./pages/Service_Detail";
+import Queue from "./pages/Queue";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -37,6 +40,9 @@ root.render(
         <Route path="/device-detail" element={<Device_Detail />} />
         <Route path="/service" element={<Service />} />
         <Route path="/add-service" element={<AddService />} />
+        <Route path="/update-service" element={<UpdateService />} />
+        <Route path="/service-detail" element={<Service_Detail />} />
+        <Route path="/queue" element={<Queue />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

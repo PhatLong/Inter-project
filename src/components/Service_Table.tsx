@@ -25,10 +25,10 @@ const Service_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
         {/* --------------------- 2 --------------- */}
@@ -40,10 +40,10 @@ const Service_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
         {/* ------------------- 3 ------------------ */}
@@ -55,10 +55,10 @@ const Service_Table = (props: TableProps) => {
             <div className="red"></div>Ngưng hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
         {/* ---------------- 4 -------------------- */}
@@ -70,10 +70,10 @@ const Service_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
         {/* ----------------- 5 --------------- */}
@@ -85,10 +85,10 @@ const Service_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
         {/* ------------- 6 ---------------- */}
@@ -100,10 +100,10 @@ const Service_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
         {/* -------------- 7------------- */}
@@ -115,10 +115,10 @@ const Service_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
         {/* ------------ 8 -------------- */}
@@ -130,10 +130,10 @@ const Service_Table = (props: TableProps) => {
             <div className="red"></div>Ngưng Hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
         {/* --------------- 9 ---------------- */}
@@ -145,10 +145,10 @@ const Service_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/service-detail">Chi tiết</a>
           </td>
           <td>
-            <a href="/update-device">Cập nhật</a>
+            <a href="/update-service">Cập nhật</a>
           </td>
         </tr>
       </tbody>
