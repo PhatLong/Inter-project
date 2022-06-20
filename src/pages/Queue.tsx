@@ -14,6 +14,8 @@ import { Link } from "react-router-dom";
 
 const Queue = () => {
   const [active, setActive] = useState("all");
+  const [SerName, setSerName] = useState("all");
+  const [Source, setSource] = useState("all");
 
   const columns = [
     "STT",
@@ -31,7 +33,7 @@ const Queue = () => {
       <Topbar Title="Cấp số >" CurrentTitle="Danh sách cấp số" />
       <Sidebar />
       <div className="device_container">
-        <h3 className="content_title">Quản lý dịch vụ</h3>
+        <h3 className="content_title">Quản lý cấp số</h3>
         <div className="device_topcontent">
           <div className="device_select">
             <InputLabel
@@ -48,8 +50,9 @@ const Queue = () => {
               onChange={(e) => setActive(e.target.value)}
             >
               <MenuItem value={"all"}>Tất cả</MenuItem>
-              <MenuItem value={"is_active"}>Hoạt động</MenuItem>
-              <MenuItem value={"not_active"}>Ngưng hoạt động</MenuItem>
+              <MenuItem value={"waiting"}>Đang chờ</MenuItem>
+              <MenuItem value={"used"}>Đã sử dụng</MenuItem>
+              <MenuItem value={"not_use"}>Bỏ qua</MenuItem>
             </Select>
           </div>
           <div className="device_select">
@@ -63,12 +66,13 @@ const Queue = () => {
               className="service_select"
               labelId="demo-simple-select-label2"
               id="demo-simple-select2"
-              value={active}
-              onChange={(e) => setActive(e.target.value)}
+              value={SerName}
+              onChange={(e) => setSerName(e.target.value)}
             >
               <MenuItem value={"all"}>Tất cả</MenuItem>
-              <MenuItem value={"is_active"}>Hoạt động</MenuItem>
-              <MenuItem value={"not_active"}>Ngưng hoạt động</MenuItem>
+              <MenuItem value={"phu_khoa"}>Khám sản - Phụ khoa </MenuItem>
+              <MenuItem value={"ham_mat"}>Khám răng hàm mặt</MenuItem>
+              <MenuItem value={"mui_hong"}>Khám tai mũi họng</MenuItem>
             </Select>
           </div>
           <div className="device_select">
@@ -82,12 +86,12 @@ const Queue = () => {
               className="service_select"
               labelId="demo-simple-select-label3"
               id="demo-simple-select3"
-              value={active}
-              onChange={(e) => setActive(e.target.value)}
+              value={Source}
+              onChange={(e) => setSource(e.target.value)}
             >
               <MenuItem value={"all"}>Tất cả</MenuItem>
-              <MenuItem value={"is_active"}>Hoạt động</MenuItem>
-              <MenuItem value={"not_active"}>Ngưng hoạt động</MenuItem>
+              <MenuItem value={"kiosk"}>Kiosk</MenuItem>
+              <MenuItem value={"systerm"}>Hệ thống</MenuItem>
             </Select>
           </div>
 
@@ -132,7 +136,7 @@ const Queue = () => {
           <span>10</span>
           <BsFillCaretRightFill />
         </div>
-        <Link to="/add-service">
+        <Link to="/add-queue">
           <div className="device_add">
             <BsFillPlusSquareFill style={{ width: 25, height: 25 }} />
             Cấp <br />

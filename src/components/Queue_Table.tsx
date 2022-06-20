@@ -28,10 +28,10 @@ const Device_Table = (props: TableProps) => {
           </td>
           <td>Kiosk</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
-        {/* -------------1-------------- */}
+        {/* -------------2-------------- */}
         <tr>
           <td>2010001</td>
           <td>Lê Huỳnh Ái Vân</td>
@@ -43,10 +43,10 @@ const Device_Table = (props: TableProps) => {
           </td>
           <td>Kiosk</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
-        {/* -------------1-------------- */}
+        {/* -------------3-------------- */}
         <tr>
           <td>2010001</td>
           <td>Lê Huỳnh Ái Vân</td>
@@ -58,10 +58,10 @@ const Device_Table = (props: TableProps) => {
           </td>
           <td>Kiosk</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
-        {/* -------------1-------------- */}
+        {/* -------------4-------------- */}
         <tr>
           <td>2010001</td>
           <td>Lê Huỳnh Ái Vân</td>
@@ -73,10 +73,10 @@ const Device_Table = (props: TableProps) => {
           </td>
           <td>Kiosk</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
-        {/* -------------1-------------- */}
+        {/* -------------5-------------- */}
         <tr>
           <td>2010001</td>
           <td>Lê Huỳnh Ái Vân</td>
@@ -88,10 +88,10 @@ const Device_Table = (props: TableProps) => {
           </td>
           <td>Kiosk</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
-        {/* -------------1-------------- */}
+        {/* -------------6-------------- */}
         <tr>
           <td>2010001</td>
           <td>Lê Huỳnh Ái Vân</td>
@@ -103,10 +103,10 @@ const Device_Table = (props: TableProps) => {
           </td>
           <td>Kiosk</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
-        {/* -------------1-------------- */}
+        {/* -------------7-------------- */}
         <tr>
           <td>2010001</td>
           <td>Lê Huỳnh Ái Vân</td>
@@ -118,37 +118,37 @@ const Device_Table = (props: TableProps) => {
           </td>
           <td>Kiosk</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
-        {/* -------------1-------------- */}
+        {/* -------------8-------------- */}
         <tr>
-          <td>2010001</td>
-          <td>Lê Huỳnh Ái Vân</td>
-          <td>Khám tim mạch</td>
+          <td>2010008</td>
+          <td>Phạm Văn Mạnh</td>
+          <td>Khám tổng quát</td>
           <td>14:35 - 07/11/2021</td>
           <td>14:35 - 12/11/2021</td>
           <td>
-            <div className="blue"></div>Đang chờ
+            <div className="red"></div>Bỏ qua
           </td>
-          <td>Kiosk</td>
+          <td>Hệ thống</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
-        {/* -------------1-------------- */}
+        {/* -------------9-------------- */}
         <tr>
-          <td>2010001</td>
-          <td>Lê Huỳnh Ái Vân</td>
-          <td>Khám tim mạch</td>
+          <td>2010009</td>
+          <td>Lê Thị Cẩm Tiên</td>
+          <td>Khám tai mũi họng</td>
           <td>14:35 - 07/11/2021</td>
           <td>14:35 - 12/11/2021</td>
           <td>
-            <div className="blue"></div>Đang chờ
+            <div className="gray"></div>Đã sử dụng
           </td>
-          <td>Kiosk</td>
+          <td>Hệ thống</td>
           <td>
-            <a href="/device-detail">Chi tiết</a>
+            <a href="/queue-detail">Chi tiết</a>
           </td>
         </tr>
       </tbody>

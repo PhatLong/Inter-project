@@ -9,6 +9,7 @@ import {
   BsStack,
   BsWhatsapp,
 } from "react-icons/bs";
+import { FaEllipsisV } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/Logoalta.png";
 
@@ -35,15 +36,15 @@ const Sidebar = () => {
       icon: <BsStack />,
     },
     {
-      path: "/",
+      path: "/report",
       name: "Báo cáo",
       icon: <BsGraphUp />,
     },
-    {
-      path: "/",
-      name: "Cài đặt hệ thống ",
-      icon: <BsNut />,
-    },
+    // {
+    //   path: "",
+    //   name: "Cài đặt hệ thống ",
+    //   icon: <BsNut />,
+    // },
   ];
   return (
     <div className="sidebar_container">
@@ -65,6 +66,26 @@ const Sidebar = () => {
             <div className="link_text">{item.name}</div>
           </NavLink>
         ))}
+        <NavLink to="" key={7} className="link" id="system">
+          <div className="icon">
+            <BsNut />
+          </div>
+          <div className="link_text">
+            Cài đặt hệ thống
+            <FaEllipsisV />
+          </div>
+          <div className="dropdown-content">
+            <Link to="/manage-role">
+              <p>Quản lý vai trò</p>
+            </Link>
+            <Link to="/manage-account">
+              <p>Quản lý tài khoản</p>
+            </Link>
+            <Link to="/user-log">
+              <p>Nhật ký người dùng</p>
+            </Link>
+          </div>
+        </NavLink>
         <button className="logout_btn">
           <Link className="logout_link" to={"/"}>
             <BsBoxArrowRight /> Đăng xuất

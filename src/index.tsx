@@ -19,6 +19,12 @@ import AddService from "./pages/AddService";
 import UpdateService from "./pages/UpdateService";
 import Service_Detail from "./pages/Service_Detail";
 import Queue from "./pages/Queue";
+import AddQueue from "./pages/AddQueue";
+import Report from "./pages/Report";
+import Queue_Detail from "./pages/Queue_Detail";
+import ManageAccount from "./pages/ManageAccount";
+import ManageRole from "./pages/ManageRole";
+import UserLog from "./pages/UserLog";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -43,6 +49,12 @@ root.render(
         <Route path="/update-service" element={<UpdateService />} />
         <Route path="/service-detail" element={<Service_Detail />} />
         <Route path="/queue" element={<Queue />} />
+        <Route path="/add-queue" element={<AddQueue />} />
+        <Route path="/queue-detail" element={<Queue_Detail />} />
+        <Route path="/report" element={<Report />} />
+        <Route path="/manage-role" element={<ManageRole />} />
+        <Route path="/manage-account" element={<ManageAccount />} />
+        <Route path="/user-log" element={<UserLog />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
