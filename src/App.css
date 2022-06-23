@@ -908,7 +908,7 @@ span {
   transition: all 0.2 ease-in;
 }
 
-.devicetype_placeholder {
+.devicetype_select p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1592,4 +1592,195 @@ span {
 
 .device_search#item9 {
   margin-left: 550px;
+}
+
+.role_container_2 {
+  position: absolute;
+  width: 1250px;
+  height: 630px;
+  left: 240px;
+  top: 100px;
+}
+
+.role_form {
+  width: 100%;
+  height: 540px;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.role_form h3 {
+  padding: 10px 0px 10px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+}
+
+.role_wrapper {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: lightcoral; */
+}
+
+.role_wrapper label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282739;
+}
+
+.role_label span {
+  width: 6px;
+  height: 6px;
+  color: #ff4747;
+  margin-left: 5px;
+}
+
+.role_wrapper .left_content {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.role_wrapper .left_content input {
+  width: 560px;
+  height: 44px;
+  padding: 0px 10px 0px 10px;
+  background: #ffffff;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.role_wrapper .left_content .role_description textarea {
+  height: 100px;
+  padding: 5px 10px 5px 10px;
+  gap: 10px;
+  width: 560px;
+  background: #ffffff;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  resize: none;
+}
+
+.role-notice {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7e7d88;
+}
+
+.role-notice span {
+  width: 6px;
+  height: 6px;
+  color: #ff4747;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.role_wrapper .right_content {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.role_select_wrap {
+  background: #fff2e7;
+  border-radius: 8px;
+}
+
+/* -------------- MANAGE ACCOUNT PAGE ------------- */
+.account_container {
+  position: absolute;
+  width: 1250px;
+  height: 630px;
+  left: 240px;
+  top: 100px;
+}
+
+.account_wrapper {
+  width: 100%;
+  height: 500px;
+  box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.account_wrapper h3 {
+  padding: 10px 0px 10px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff7506;
+}
+
+.account-grip {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 0 1.5rem 5px 1.5rem;
+}
+
+.account-grip label {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282739;
+}
+
+.account-grip span {
+  width: 6px;
+  height: 6px;
+  color: #ff4747;
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.account-grip input {
+  width: 550px;
+  height: 44px;
+  border: 1.5px solid #d4d4d7;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  background-color: white;
+  padding: 0 1rem;
+  transition: all 0.2 ease-in;
+}
+
+.account-select {
+  width: 580px;
+  height: 44px;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  background-color: white;
+  transition: all 0.2 ease-in;
+}
+
+.account-select p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #a9a9b0;
+}
+
+.account-notice {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #7e7d88;
+}
+
+.account-notice span {
+  width: 6px;
+  height: 6px;
+  color: #ff4747;
+  margin-top: 3px;
+  margin-right: 5px;
 }

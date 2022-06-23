@@ -1,6 +1,7 @@
 import { MenuItem, Select } from "@mui/material";
 import React, { useState } from "react";
 import { BsX } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 
@@ -100,7 +101,9 @@ const UpdateDevice = () => {
           </p>
         </div>
         <div className="addform_button">
-          <button className="addform_cancelbtn">Hủy bỏ</button>
+          <Link to="/device">
+            <button className="addform_cancelbtn">Hủy bỏ</button>
+          </Link>
           <button className="addform_addbtn">Cập nhật</button>
         </div>
       </div>

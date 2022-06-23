@@ -30,7 +30,7 @@ const ManageRole = () => {
         <div className="role_table">
           <Role_Table title={columns} />
         </div>
-        <Link to="/add-service">
+        <Link to="/add-role">
           <div className="device_add">
             <BsFillPlusSquareFill style={{ width: 25, height: 25 }} />
             Thêm <br />

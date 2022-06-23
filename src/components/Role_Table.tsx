@@ -24,7 +24,7 @@ const Role_Table = (props: TableProps) => {
           <td>6</td>
           <td>Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu</td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-role">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -33,7 +33,7 @@ const Role_Table = (props: TableProps) => {
           <td>6</td>
           <td>Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu</td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-role">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -42,7 +42,7 @@ const Role_Table = (props: TableProps) => {
           <td>6</td>
           <td>Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu</td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-role">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -51,7 +51,7 @@ const Role_Table = (props: TableProps) => {
           <td>6</td>
           <td>Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu</td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-role">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -60,7 +60,7 @@ const Role_Table = (props: TableProps) => {
           <td>6</td>
           <td>Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu</td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-role">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -69,7 +69,7 @@ const Role_Table = (props: TableProps) => {
           <td>6</td>
           <td>Thực hiện nhiệm vụ về thống kê số liệu và tổng hợp số liệu</td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-role">Cập nhật</a>
           </td>
         </tr>
       </tbody>

@@ -27,7 +27,7 @@ const ManageAccount = () => {
 
   return (
     <div className="main-background">
-      <Topbar Title="Thiết bị >" CurrentTitle="Danh sách thiết bị" />
+      <Topbar Title="Cài đặt hệ thống >" CurrentTitle="Quản lý tài khoản" />
       <Sidebar />
       <div className="device_container">
         <h3 className="content_title">Danh sách thiết bị</h3>
@@ -77,7 +77,7 @@ const ManageAccount = () => {
           <span>10</span>
           <BsFillCaretRightFill />
         </div>
-        <Link to="/add-device">
+        <Link to="/update-account">
           <div className="device_add">
             <BsFillPlusSquareFill style={{ width: 25, height: 25 }} />
             Thêm <br />

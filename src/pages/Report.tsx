@@ -49,7 +49,7 @@ const Report = () => {
         </div>
         <div className="device_add" id="item7">
           <BsFillFileEarmarkArrowDownFill style={{ width: 30, height: 30 }} />
-          Quay lại
+          Tải về
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { MenuItem, Select } from "@mui/material";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 
@@ -22,7 +23,7 @@ const AddDevice = () => {
               <label>
                 Mã thết bị: <span>*</span>
               </label>
-              <input type="String" placeholder="Nhập mã thiết bị" />
+              <input type="text" placeholder="Nhập mã thiết bị" />
             </div>
             <div>
               <label>
@@ -49,19 +50,19 @@ const AddDevice = () => {
               <label>
                 Tên thiết bị: <span>*</span>
               </label>
-              <input type="String" placeholder="Nhập tên thiết bị" />
+              <input type="text" placeholder="Nhập tên thiết bị" />
             </div>
             <div>
               <label>
                 Tên đăng nhập: <span>*</span>
               </label>
-              <input type="String" placeholder="Nhập tài khoản" />
+              <input type="text" placeholder="Nhập tài khoản" />
             </div>
             <div>
               <label>
                 Địa chỉ IP: <span>*</span>
               </label>
-              <input type="String" placeholder="Nhập địa chỉ IP" />
+              <input type="text" placeholder="Nhập địa chỉ IP" />
             </div>
             <div>
               Mặt khẩu: <span>*</span>
@@ -71,7 +72,7 @@ const AddDevice = () => {
               <label>
                 Dịch vụ sử dụng: <span>*</span>
               </label>
-              <input type="String" placeholder="Nhập dịch vụ sử dụng" />
+              <input type="text" placeholder="Nhập dịch vụ sử dụng" />
             </div>
           </div>
           <p className="notice">
@@ -79,7 +80,9 @@ const AddDevice = () => {
           </p>
         </div>
         <div className="addform_button">
-          <button className="addform_cancelbtn">Hủy bỏ</button>
+          <Link to="/device">
+            <button className="addform_cancelbtn">Hủy bỏ</button>
+          </Link>
           <button className="addform_addbtn">Thêm thiết bị</button>
         </div>
       </div>

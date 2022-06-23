@@ -50,7 +50,7 @@ const UpdateService = () => {
                   Mã dịch vụ: <span>*</span>
                 </label>
                 <input
-                  type="String"
+                  type="text"
                   value={Code}
                   onChange={(event) => setCode(event.target.value)}
                 />
@@ -60,7 +60,7 @@ const UpdateService = () => {
                   Tên dịch vụ: <span>*</span>
                 </label>
                 <input
-                  type="String"
+                  type="text"
                   value={Name}
                   onChange={(event) => setName(event.target.value)}
                 />

@@ -28,7 +28,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -42,7 +42,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -56,7 +56,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -70,7 +70,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -84,7 +84,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -98,7 +98,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -112,7 +112,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -126,7 +126,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
         {/* -------------------- 1 ---------------- */}
@@ -140,7 +140,7 @@ const Account_Table = (props: TableProps) => {
             <div className="green"></div>Hoạt động
           </td>
           <td>
-            <a href="/update-service">Cập nhật</a>
+            <a href="/update-account">Cập nhật</a>
           </td>
         </tr>
       </tbody>
