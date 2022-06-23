@@ -77,7 +77,7 @@ const ManageAccount = () => {
           <span>10</span>
           <BsFillCaretRightFill />
         </div>
-        <Link to="/update-account">
+        <Link to="/add-account">
           <div className="device_add">
             <BsFillPlusSquareFill style={{ width: 25, height: 25 }} />
             Thêm <br />
