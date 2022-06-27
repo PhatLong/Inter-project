@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Logo from "../assets/Logoalta.png";
+import Logo from "../shared/assets/Logoalta.png";
 import SigninInput from "./SigninInput";
 
 const RsPassSidebar: React.FC = () => {
@@ -17,7 +17,7 @@ const RsPassSidebar: React.FC = () => {
         <h3>Nhập lại mặt khẩu</h3>
         <SigninInput Type="password" />
         <Link to={"/"}>
-          <button>Đăng Nhập</button>
+          <button>Xác nhận</button>
         </Link>
       </Form>
     </Container>

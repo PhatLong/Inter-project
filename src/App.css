@@ -1,10 +1,11 @@
 * {
-  /* background-color: #F6F6F6; */
 }
 
 .main-background {
   position: relative;
-  background: #f7f7f7;
+  background-color: #f7f7f7;
+  width: 1518px;
+  height: 750px;
   border-radius: 16px;
 }
 
@@ -642,7 +643,8 @@
   background: #a9d4ff;
 }
 .react-calendar__tile--active {
-  background: #006edc;
+  background: #ff7506;
+  border-radius: 8px;
   color: white;
 }
 .react-calendar__tile--active:enabled:hover,
