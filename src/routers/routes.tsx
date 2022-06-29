@@ -1,10 +1,10 @@
 import React from "react";
 import App from "../App";
 import { Route, Routes } from "react-router-dom";
-import ResetPass from "../pages/ResetPass";
-import ResetPass2 from "../pages/ResetPass2";
+import ForgetPass from "../pages/Auth/ForgetPassword/ForgetPass";
+import ResetPass from "../pages/Auth/ResetPassword/ResetPass";
 import Device from "../pages/Device";
-import Profile from "../pages/Profile";
+import Profile from "../pages/Auth/Profile/Profile";
 import Dashbroad from "../pages/Dashbroad";
 import Dashbroad_weeks from "../pages/Dashbroad_weeks";
 import Dashbroad_months from "../pages/Dashbroad_months";
@@ -31,8 +31,8 @@ const routes = () => {
   return (
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/forgetpass" element={<ForgetPass />} />
       <Route path="/resetpass" element={<ResetPass />} />
-      <Route path="/resetpass-2" element={<ResetPass2 />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/dashbroad" element={<Dashbroad />} />
       <Route path="/dashbroad-week" element={<Dashbroad_weeks />} />

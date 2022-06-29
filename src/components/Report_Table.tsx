@@ -14,14 +14,14 @@ const Report_Table = (props: TableProps) => {
   const sorting = (col: any) => {
     if (State === "ASC") {
       const sorted = [...Data].sort((a: any, b: any) =>
-        a[col].toLowerCase() > b[col].toLowerCase() ? 1 : -1
+        a[col] > b[col] ? 1 : -1
       );
       setData(sorted);
       setState("DSC");
     }
     if (State === "DSC") {
       const sorted = [...Data].sort((a: any, b: any) =>
-        a[col].toLowerCase() < b[col].toLowerCase() ? 1 : -1
+        a[col] < b[col] ? 1 : -1
       );
       setData(sorted);
       setState("ASC");
@@ -70,7 +70,30 @@ const Report_Table = (props: TableProps) => {
             <td>{d.Number}</td>
             <td>{d.Name}</td>
             <td>{d.Date}</td>
-            <td>{d.Status}</td>
+            {d.Status === "Đã sử dụng" ? (
+              <td>
+                {d.Status}
+                <p>1</p>
+              </td>
+            ) : (
+              " "
+            )}
+            {d.Status === "Đang chờ" ? (
+              <td>
+                {d.Status}
+                <p>2</p>
+              </td>
+            ) : (
+              " "
+            )}
+            {d.Status === "Bỏ qua" ? (
+              <td>
+                {d.Status}
+                <p>3</p>
+              </td>
+            ) : (
+              " "
+            )}
             <td>{d.Source}</td>
           </tr>
         ))}

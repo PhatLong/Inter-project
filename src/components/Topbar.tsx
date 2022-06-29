@@ -2,7 +2,7 @@ import React from "react";
 import { BsBellFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Avatar from "../assets/avatar.png";
+import Avatar from "../shared/assets/avatar.png";
 
 type TopbarProps = {
   Title?: string;

@@ -11,7 +11,7 @@ import {
 } from "react-icons/bs";
 import { FaEllipsisV } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../assets/Logoalta.png";
+import Logo from "../shared/assets/Logoalta.png";
 
 const Sidebar = () => {
   const menuItem = [
@@ -40,15 +40,10 @@ const Sidebar = () => {
       name: "Báo cáo",
       icon: <BsGraphUp />,
     },
-    // {
-    //   path: "",
-    //   name: "Cài đặt hệ thống ",
-    //   icon: <BsNut />,
-    // },
   ];
   return (
-    <div className="sidebar_container">
-      <div className="sidebar">
+    <div className="ssidebar_container">
+      <div className="ssidebar">
         <div className="top_section">
           <img src={Logo} alt={"Logo"} />
         </div>
@@ -57,10 +52,10 @@ const Sidebar = () => {
             to={item.path}
             key={index}
             className="link"
-            // style={({ isActive }) => ({
-            //   background: isActive ? "orange" : "white",
-            //   color: isActive ? "white" : "#7E7D88",
-            // })}
+            style={({ isActive }) => ({
+              background: isActive ? "orange" : "white",
+              color: isActive ? "white" : "#7E7D88",
+            })}
           >
             <div className="icon">{item.icon}</div>
             <div className="link_text">{item.name}</div>

@@ -11,11 +11,11 @@
 
 /* -------- SIDEBAR ------- */
 
-.sidebar_container {
+.ssidebar_container {
   display: flex;
 }
 
-.sidebar {
+.ssidebar {
   background: #ffff;
   color: #7e7d88;
   height: 100vh;

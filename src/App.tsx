@@ -1,15 +1,13 @@
 import "./App.css";
 import { Greet } from "./components/Greet";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/Auth/Login/Login";
 
 function App() {
   return (
     <div>
-      {/* <Greet name="T-Rex" /> */}
       <SignUp />
     </div>
   );
 }
 
-//className="App"
 export default App;
