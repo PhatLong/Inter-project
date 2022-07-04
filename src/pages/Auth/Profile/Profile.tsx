@@ -1,7 +1,7 @@
 import React from "react";
 import PersonInfor from "../components/PersonInfor";
-import Sidebar from "../../../components/Sidebar";
-import Topbar from "../../../components/Topbar";
+import Sidebar from "../../../layout/Sidebar/Sidebar";
+import Topbar from "../../../layout/Topbar/Topbar";
 import "../styles.css";
 
 const Profile = () => {

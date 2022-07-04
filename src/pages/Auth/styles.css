@@ -8,7 +8,7 @@
 
 .wrapper {
   width: 100%;
-  height: 720px;
+  height: 750px;
   display: flex;
   background: #f6f6f6;
 }
@@ -271,10 +271,10 @@
 
 /* ------------ COMPONENTS ------------- */
 
-.sidebar_container {
+.side_container {
   min-width: 550px;
   background-color: rgba(225, 225, 225, 0.8);
-  height: 720px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -296,7 +296,7 @@
 .content_container {
   position: relative;
   width: 100%;
-  height: 720px;
+  height: 750px;
   display: flex;
   justify-content: center;
   align-items: center;

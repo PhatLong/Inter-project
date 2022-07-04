@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Login_Sidebar: React.FC = () => {
   return (
-    <div className="sidebar_container">
+    <div className="side_container">
       <div className="LogoWrapper">
         <img src={Logo} alt={"Logo"} />
       </div>

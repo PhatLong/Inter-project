@@ -5,7 +5,7 @@ import Input from "./Input";
 
 const ForgetPassSidebar: React.FC = () => {
   return (
-    <div className="sidebar_container">
+    <div className="side_container">
       <div className="LogoWrapper">
         <img src={Logo} alt={"Logo"} />
       </div>

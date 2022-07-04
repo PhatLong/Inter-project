@@ -6,7 +6,7 @@ import Input_Pass from "./Input_Pass";
 
 const RsPassSidebar: React.FC = () => {
   return (
-    <div className="sidebar_container">
+    <div className="side_container">
       <div className="LogoWrapper">
         <img src={Logo} alt={"Logo"} />
       </div>

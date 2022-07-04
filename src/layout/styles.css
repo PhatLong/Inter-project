@@ -1,0 +1,270 @@
+/* -------- SIDEBAR ------- */
+
+.sidebar_container {
+  display: flex;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  background: #ffff;
+  color: #7e7d88;
+  height: 100vh;
+  width: 210px;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+
+.top_section img {
+  width: 40%;
+  height: 30%;
+  object-fit: contain;
+}
+
+.link {
+  display: flex;
+  color: #7e7d88;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.link:hover {
+  background: orange;
+  color: #ffff;
+}
+
+.link#system {
+  position: relative;
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  min-width: 200px;
+  filter: drop-shadow(3px 3px 4px rgba(70, 64, 67, 0.1));
+  z-index: 1;
+  left: 210px;
+  top: 0px;
+}
+
+.dropdown-content p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7e7d88;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+}
+
+.dropdown-content p:hover {
+  background: #ff9138;
+  color: white;
+}
+
+.link#system:hover .dropdown-content {
+  display: block;
+}
+
+.icon,
+.link_text {
+  font-size: 18px;
+}
+
+.logout_btn {
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 12px;
+  background: #fff2e7;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-top: 250px;
+  border: none;
+}
+
+.logout_link {
+  display: contents;
+  text-decoration: none;
+  color: #ff7506;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* ---------------------------- TOP BAR ----------------- */
+.Nav_container {
+  /* position: absolute; */
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  z-index: 10;
+  margin-left: 230px;
+  width: 82%;
+}
+
+.Navleft {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff9138;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.topbar_title {
+  color: #7e7d88;
+  margin-right: 8px;
+}
+
+.Navright {
+  display: flex;
+  margin-right: 15px;
+  align-items: center;
+}
+
+.Navright button {
+  background: #fff2e7;
+  border-radius: 32px;
+  border: none;
+  color: #ffac6a;
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  margin-right: 8px;
+}
+
+.Navright .button_active {
+  background: #ff7506;
+  border-radius: 32px;
+  border: none;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  margin-right: 8px;
+}
+
+.bell_icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.notification-menu {
+  position: absolute;
+  top: 60px;
+  left: 900px;
+  background: #ffffff;
+  border: #989898;
+  box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+  border-radius: 10px;
+  list-style: none;
+  width: 360px;
+  height: 500px;
+  display: block;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.notice_active {
+  display: none;
+}
+
+.notification-title {
+  width: 356px;
+  height: 48px;
+  background: #ff9138;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  display: flex;
+}
+
+.notification-title span {
+  margin: 0.5rem 0 0 1rem;
+}
+
+.Navright li {
+  padding: 15px;
+  height: 45px;
+}
+
+.Navright li h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bf5805;
+}
+
+.Navright li p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535261;
+}
+
+.notification-menu::-webkit-scrollbar {
+  width: 4px;
+  height: 40px;
+}
+
+.notification-menu::-webkit-scrollbar-track {
+  background: white;
+}
+
+.notification-menu::-webkit-scrollbar-thumb {
+  background: #ffc89b;
+  border-radius: 43px;
+}
+
+.Navright hr {
+  margin-top: 10px;
+  background: #d4d4d7;
+}
+
+.Navright img {
+  width: 35px;
+  height: 35px;
+  object-fit: fill;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Navright h3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #7e7d88;
+}
+
+.Navright h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535261;
+}
+
+.profile_pic {
+  cursor: pointer;
+}
